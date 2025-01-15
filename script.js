@@ -43,21 +43,20 @@ function capitalizeFirstLetter() {
 }
 
 // Tela de login
-function login() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+//function login() {
+   // const name = document.getElementById('name').value;
+    //const email = document.getElementById('email').value;
 
-    if (name && email) {
- alert(`Bem-vindo, ${name}! Acesse o PayPal: kimfrancisco997@gmail.com ou faça a transferência para o IBAN: 0006 0000 13322298301 29  para publicar sua música.`);
-        document.getElementById('login').style.display = 'none';
-    } else {
-        alert('Por favor, preencha todos os campos!');
-    }
-}
+    //if (name && email) {
+ //alert(`Bem-vindo, ${name}! Acesse o PayPal: kimfrancisco997@gmail.com ou faça a transferência para o IBAN: 0006 0000 13322298301 29  para publicar sua música.`);
+       // document.getElementById('login').style.display = 'none';
+   // } else {
+        //alert('Por favor, preencha todos os campos!');
+  //  }
 
 // Exibir tela de login
-document.getElementById('loginLink').addEventListener('click', function () {
-    document.getElementById('login').style.display = 'flex';
-});
+//document.getElementById('loginLink').addEventListener('click', function () {
+   // document.getElementById('login').style.display = 'flex';
+//});
 
 
