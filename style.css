@@ -1,0 +1,189 @@
+
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #0044cc;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+[13/01, 11:03 da manhã] ChatGPT: text-decoration: underline;
+}
+
+/* Seção de Cabeçalho */
+header {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seção de Pesquisa */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Lista de Músicas */
+#music-list {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#music-list .music-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#music-list .music-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#music-list .music-item p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#music-list .music-item a {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#music-list .music-item a:hover {
+    background-color: #0044cc;
+}
+
+/* Seção de Sobre */
+#about {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+[13/01, 11:03 da manhã] ChatGPT: #about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Seção de Contato */
+#contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Tela de Login */
+.login-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.login-box button:hover {
+    background-color: #0033aa;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+

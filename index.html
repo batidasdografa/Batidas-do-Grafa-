@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batidas do Grafa - Blog de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#login" id="loginLink">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+ <!-- Seção de Introdução -->
+    <header id="home">
+        <div class="container">
+            <h1>Batidas do Grafa</h1>
+            <p>O seu blog de músicas preferido! Descubra, ouça e baixe músicas incríveis.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Pesquisa de Músicas -->
+    <section class="search-container container">
+        <input type="text" id="searchInput" placeholder="Pesquisar músicas..." onkeyup="searchMusic()">
+    </section>
+
+    <!-- Lista de Músicas -->
+    <section id="music-list" class="container">
+        <h2>Músicas Disponíveis</h2>
+        <div class="music-item" id="music1">
+            <h3>Uezzy Ferrari - "Hoe"</h3>
+            <a href="1-Uezzy Ferrari - Hoe (Hostedby.Maniix Squeeze).mp3" class="play-btn" onclick="playMusic('1-Uezzy Ferrari - Hoe (Hostedby.Maniix Squeeze).mp3')">Tocar</a>
+            <a href="1-Uezzy Ferrari - Hoe (Hostedby.Maniix Squeeze).mp3" class="download-btn" download onclick="downloadMusic('music1')">Baixar</a>
+            <p>tocada: <span id="plays-music1">0</span> vezes |  baixada: <span id="downloads-music1">0</span> vezes</p>
+        </div>
+        <div class="music-item" id="music2">
+            <h3>Uezzy Ferrari - "Melhorar"</h3>
+            <a href="2-Uezzy Ferrari - Melhorar (Hostedby.Maniix Squeeze).mp3" class="play-btn" onclick="playMusic('music2')">Tocar</a>
+            <a href="2-Uezzy Ferrari - Melhorar (Hostedby.Maniix Squeeze).mp3" class="download-btn" download onclick="downloadMusic('music2')">Baixar</a>
+ <p>tocada: <span id="plays-music2">0</span> vezes |  baixada: <span id="downloads-music2">0</span> vezes</p>
+        </div>
+        <div class="music-item" id="music3">
+            <h3>Uezzy Ferrari - "Velho dia"</h3>
+            <a href="3-Uezzy Ferrari - Velho dia (Hostedby.Maniix Squeeze).mp3" class="play-btn" onclick="playMusic('music3')">Tocar</a>
+            <a href="3-Uezzy Ferrari - Velho dia (Hostedby.Maniix Squeeze).mp3" class="download-btn" download onclick="downloadMusic('music3')">Baixar</a>
+            <p>tocada: <span id="plays-music3">0</span> vezes |  baixada: <span id="downloads-music3">0</span> vezes</p>
+        </div>
+         <div class="music-item" id="music4">
+            <h3>Uezzy Ferrari - "Clementina"</h3>
+            <a href="4-Uezzy Ferrari - Clementina (Prodby.Maniix Squeeze).mp3" class="play-btn" onclick="playMusic('music4')">Tocar</a>
+            <a href="4-Uezzy Ferrari - Clementina (Prodby.Maniix Squeeze).mp3" class="download-btn" download onclick="downloadMusic('music4')">Baixar</a>
+            <p> tocada: <span id="plays-music4">0</span> vezes |  baixada: <span id="downloads-music4">0</span> vezes</p>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="container">
+        <h2>Sobre o Batidas do Grafa</h2>
+        <p>Batidas do Grafa é um blog dedicado a compartilhar músicas de qualidade. Aqui você encontra uma vasta seleção de músicas para ouvir e baixar de forma fácil e rápida.</p>
+        <h3>Formas de Pagamento</h3>
+        <p>Para publicar sua música no nosso blog, aceitamos pagamentos via:</p>
+        <ul>
+            <li><strong>PayPal:</strong> kimfrancisco997@gmail.com</li>
+            <li><strong>Transferência Bancária:</strong> IBAN: 0006 0000 13322298301 29</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="container">
+        <h2>Contacto</h2>
+ <p>Entre em contacto para mais informações sobre como publicar sua música ou para qualquer dúvida.</p>
+    </section>
+
+    <!-- Tela de Login -->
+    <div id="login" class="login-container">
+        <div id="capitalizeFirstLetter" class="capitalizeFirstLetter-container">
+        <div class="login-box">
+            <h3>Login para Pagamento</h3>
+            <input type="text" id="name" placeholder="Nome" oninput="capitalizeFirstLetter()" pattern="[A-Za-zÀ-y\s]+" title="Apenas letras são permitidas" required>
+            <input type="email" id="email" placeholder="Email">
+            <button onclick="login()">Entrar</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Batidas do Grafa - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
