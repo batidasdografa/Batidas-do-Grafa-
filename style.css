@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-[13/01, 11:03 da manhã] ChatGPT: text-decoration: underline;
+ text-decoration: underline;
 }
 
 /* Seção de Cabeçalho */
@@ -118,7 +118,7 @@ header p {
     padding: 40px 0;
     text-align: center;
 }
-[13/01, 11:03 da manhã] ChatGPT: #about h2 {
+ #about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
